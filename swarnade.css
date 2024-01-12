@@ -24,6 +24,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .button-1:hover,
 .button-1:focus {
   background-color: #F082AC;
@@ -39,7 +40,7 @@
   color: #FFFFFF;
   cursor: pointer;
   flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 500;
   height: 4rem;
@@ -92,7 +93,7 @@
   --slice-3: inset(10% -6px 85% 0);
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
-  
+
   content: 'ALTERNATE TEXT';
   display: block;
   position: absolute;
@@ -115,42 +116,52 @@
     clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
   }
+
   10% {
     clip-path: var(--slice-3);
     transform: translate(10px, 10px);
   }
+
   20% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 10px);
   }
+
   30% {
     clip-path: var(--slice-3);
     transform: translate(0px, 5px);
   }
+
   40% {
     clip-path: var(--slice-2);
     transform: translate(-5px, 0px);
   }
+
   50% {
     clip-path: var(--slice-3);
     transform: translate(5px, 0px);
   }
+
   60% {
     clip-path: var(--slice-4);
     transform: translate(5px, 10px);
   }
+
   70% {
     clip-path: var(--slice-2);
     transform: translate(-10px, 10px);
   }
+
   80% {
     clip-path: var(--slice-5);
     transform: translate(20px, -10px);
   }
+
   90% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 0px);
   }
+
   100% {
     clip-path: var(--slice-1);
     transform: translate(0);
@@ -158,6 +169,7 @@
 }
 
 @media (min-width: 768px) {
+
   #swarnade-2,
   #swarnade-2:after {
     width: 200px;
@@ -170,7 +182,7 @@
 /* CSS */
 #swarnade-3 {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -229,7 +241,7 @@
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,sans-serif;
+  font-family: -apple-system, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -.24px;
@@ -278,7 +290,7 @@
   display: inline-block;
   flex-direction: row;
   flex-shrink: 0;
-  font-family: Eina01,sans-serif;
+  font-family: Eina01, sans-serif;
   font-size: 16px;
   font-weight: 800;
   justify-content: center;
@@ -378,16 +390,17 @@
 
 /* CSS */
 #swarnade-6 {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
+  --b: 3px;
+  /* border thickness */
+  --s: .45em;
+  /* size of the corner */
   --color: #373B44;
-  
+
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
   background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
@@ -401,7 +414,7 @@
 }
 
 #swarnade-6:hover,
-#swarnade-6:focus-visible{
+#swarnade-6:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: .05em;
@@ -431,18 +444,16 @@
 
 #swarnade-7:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -461,9 +472,11 @@
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -555,11 +568,11 @@
 #swarnade-11 {
   background-color: #c2fbd7;
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -572,7 +585,7 @@
 }
 
 #swarnade-11:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
 
@@ -588,7 +601,7 @@
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,sans-serif;
+  font-family: -apple-system, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -.24px;
@@ -625,7 +638,7 @@
 /* CSS */
 #swarnade-10 {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -672,3 +685,35 @@
   }
 }
 
+
+/*CSS*/
+#Shreya2507 {
+  background-color: #fa81a3;
+  color: black;
+
+  border: 1px solid #f9497b;
+  border-radius: 6px;
+  box-shadow: #fff 4px 4px 0 0, #f9497b 4px 4px 0 1px;
+  box-sizing: border-box;
+
+
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 10px 30px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+
+
+  transition: all 0.09s;
+  cursor: pointer;
+
+}
+
+
+#Shreya2507:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #f9497b 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}

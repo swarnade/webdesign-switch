@@ -28,23 +28,26 @@ This project is built using the following technologies:
 ### 2.Paste The Code In HTML Document in Row Div
 ```
 <div class="col-12 col-md-3 main-row">
-                    <div class=" box-main">
-                        <button id="{github-username}">Button </button>
-                        <br />
-                        <p1 class="designed-by">{Name Of The Designer}</p1>
-                        <div>
-                            <a href="{Github Account Link}">
-                                <img src="./assets/github.png" class="img-github">
-                            </a>
-                            <a href="{Linkdin Account Link}">
-                                <img src="./assets/linkedin.png" class="img-linkedin">
-                            </a>
-                        </div>
-                    </div>
+  <div class=" box-main">
+      <a href="{CSS File Link}">  
+          <button id="{github-username}">Button </button>
+      </a>
+      <br />
+      <p1 class="designed-by">{Name Of The Designer}</p1>
+      <div>
+          <a href="{Github Account Link}">
+              <img src="./assets/github.png" class="img-github">
+          </a>
+          <a href="{Linkdin Account Link}">
+              <img src="./assets/linkedin.png" class="img-linkedin">
+          </a>
+      </div>
+  </div>
 </div>
 ```
 - Use Your Github Username As The Button Id And Css File Name
-- If You Have Contributed For Multiple Button Use userrname_1/userrname_2
+- If You Have Contributed For Multiple Button Use userrname-1/userrname-2
+- Redirect To The CSS File Of The Button
 - Make Sure To Include Your Name/Github/Linkedin
 
 

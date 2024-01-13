@@ -1,29 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Mansalva&display=swap');
-        
-        body{
-            background-color: black;
-        }
-        .box-main {
-            border: 3px solid white;
-            text-align: center;
-            height: 200px;
-            justify-content: center;
-            padding: 5vh 0;
-            border-radius: 5px;
-        }
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Mansalva&display=swap");
 
-        .img-github,
-        .img-linkedin {
-            width: 30px;
-            background-color: aliceblue;
+body {
+  background-color: black;
+}
+.box-main {
+  border: 3px solid white;
+  text-align: center;
+  height: 200px;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
 
-        }
-        .designed-by{
-            color: white;
-            font-family: 'Audiowide', sans-serif;
-        }
-        .main-row{
-            margin: 20px 0px;
-        }
+.img-github,
+.img-linkedin {
+  width: 30px;
+  border-radius: 5px;
+}
+.designed-by {
+  color: white;
+  font-family: "Audiowide", sans-serif;
+  padding: 15px 0px;
+}
+.main-row {
+  margin: 20px 0px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

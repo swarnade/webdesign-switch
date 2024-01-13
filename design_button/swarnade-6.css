@@ -1,7 +1,7 @@
 #swarnade-6 {
   --b: 3px; /* border thickness */
   --s: 0.45em; /* size of the corner */
-  --color: #373b44;
+  --color: white;
 
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);

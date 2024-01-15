@@ -1,0 +1,38 @@
+#kom-senapati-1 {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2.5px solid #212529;
+    border-radius: 2px;
+    color: #212529;
+}
+
+#kom-senapati-1:hover {
+    color: #fff;
+}
+
+#kom-senapati-1:hover:after {
+    width: 100%;
+}
+
+#kom-senapati-1:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}

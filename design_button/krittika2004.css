@@ -1,0 +1,18 @@
+#krittika2004{
+    display: inline-block;
+   padding: 17px 27px;
+   font-size: 16px;
+   cursor: pointer;
+   color: white;
+   background-color: rgb(28, 7, 91);
+   border: none;
+   -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  box-shadow: 0 10px #998;
+}
+#krittika2004:active {
+    background-color: rgb(102, 107, 185);
+    box-shadow: 0 6px rgb(55, 55, 62);
+    transform: translateY(10px);
+  }

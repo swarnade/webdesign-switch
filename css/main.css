@@ -43,3 +43,52 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
+/* nav bar styling */
+nav.navbar {
+  background: linear-gradient(to right, #4234db, #3498db);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a.navbar-brand, 
+a.navbar-nav .nav-link {
+  color: #ced721 !important;
+}
+
+a.navbar-brand:hover, 
+a.navbar-nav .nav-link:hover {
+  color: #dce9e6 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a6b03b; 
+}
+
+
+.navbar-nav .nav-link.active {
+  color: #391450;
+  
+}
+.navbar-nav .nav-link.active:hover {
+  color: #9ee049;
+  
+}
+
+
+button.navbar-toggler {
+  background-color: transparent; 
+  border: none; 
+  padding: 0; 
+}
+
+button.navbar-toggler .navbar-toggler-icon {
+  border-radius: 4px; 
+}
+button.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #29797d; 
+}

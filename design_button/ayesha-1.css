@@ -1,0 +1,22 @@
+#animated-button {
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 17px 30px;
+    border: 0;
+    color: #fff;
+    font-size: 17.5px;
+    background: #00d301;
+    background: -webkit-linear-gradient(-196deg,#00d301,#36c275 50%,#00a562);
+    background: -webkit-linear-gradient(164deg,#00d301,#36c275 50%,#00a562);
+    background: linear-gradient(286deg,#00d301,#36c275 50%,#00a562);
+    line-height: 30px;
+    font-weight: 800;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+#animated-button:hover {
+    background: #00a562;
+    color: #fff;
+}

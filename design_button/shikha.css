@@ -1,0 +1,47 @@
+.box-main #shikha{
+    background: linear-gradient(to bottom, #cb1515, #600183);
+    border-radius: 50%;
+    position: center;
+    border-style: none;
+    box-sizing: border-box;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+  .box-main #shikha:hover span:nth-child(1){
+    filter: blur(7px);
+  }
+  .box-main #shikha:hover span:nth-child(2){
+    filter: blur(14px);
+  }
+  .box-main #shikha:hover{
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+  }
+  @keyframes rotate {
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  @media (max-width: 640px){
+    .box-main #shikha{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .box-main #shikha{
+      margin: 50px 0;
+    }
+  }

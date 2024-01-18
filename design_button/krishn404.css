@@ -1,4 +1,4 @@
-#your-github-username {
+#krishn404 {
   position: relative;
   background-color: rgb(243, 243, 92);
   border: 2px solid rgb(248, 235, 118);
@@ -8,7 +8,7 @@
   transition: box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Add smooth transition effect */
 }
 
-#your-github-username:hover {
+#krishn404:hover {
   background-color: #fdd835; /* Change to yellow on hover */
   box-shadow: 0 0 10px 5px #f5d64a; /* Add a glowing effect with box-shadow */
   border-radius: 50%; /* Make it a circle on hover */
@@ -16,7 +16,7 @@
   border-color: transparent;
 }
 
-#your-github-username::after {
+#krishn404::after {
   content: '😃'; /* Initial content */
   color: #000000; /* Set the text color for 'Hello' */
   position: absolute;
@@ -28,6 +28,6 @@
   transition: opacity 0.3s; /* Add smooth transition effect for opacity */
 }
 
-#your-github-username:hover::after {
+#krishn404:hover::after {
   opacity: 1; /* Show the text on hover */
 }

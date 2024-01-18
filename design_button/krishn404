@@ -1,0 +1,33 @@
+#your-github-username {
+  position: relative;
+  background-color: rgb(243, 243, 92);
+  border: 2px solid rgb(248, 235, 118);
+  border-radius: 8px;
+  color: #000000; /* Yellow color code for text */
+  padding: 20px 20px; /* Adjust padding as needed */
+  transition: box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+}
+
+#your-github-username:hover {
+  background-color: #fdd835; /* Change to yellow on hover */
+  box-shadow: 0 0 10px 5px #f5d64a; /* Add a glowing effect with box-shadow */
+  border-radius: 50%; /* Make it a circle on hover */
+  color: transparent; /* Hide the text on hover */
+  border-color: transparent;
+}
+
+#your-github-username::after {
+  content: '😃'; /* Initial content */
+  color: #000000; /* Set the text color for 'Hello' */
+  position: absolute;
+  font-size:4rem ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s; /* Add smooth transition effect for opacity */
+}
+
+#your-github-username:hover::after {
+  opacity: 1; /* Show the text on hover */
+}

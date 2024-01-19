@@ -12,6 +12,39 @@ body {
   border-radius: 5px;
   margin-top: 20px;
 }
+.navbar-design{
+  position: fixed;
+ left:  76rem;
+
+ 
+}
+.nav-item{
+  margin-left: 1.5rem;
+
+  color: rgb(233, 218, 14);
+  
+ font-size: 35px;
+}
+.nav-item:hover{
+
+  color: #83b810;
+  cursor: grab;
+}
+.btn{
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: -apple-system,sans-serif;
+    height: 55px;
+   
+  
+    border-radius: 10px;
+
+}
+
 
 .img-github,
 .img-linkedin {

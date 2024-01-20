@@ -1,0 +1,20 @@
+.box-main #zul132-1 {
+    position: relative;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.box-main #zul132-1:hover {
+    background: #1e9bff;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px #1e9bff;
+}

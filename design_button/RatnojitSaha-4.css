@@ -1,0 +1,40 @@
+    @keyframes background {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+
+    #ratnojit4 {
+        cursor: pointer;
+        outline: solid;
+        border: none;
+        background-color: #ff03d1;
+        padding: 0.3em 1.2em;
+        border-radius: 30px;
+        font-size: 1.3rem;
+        font-weight: 550;
+        color: #ffffff;
+        background-size: 100% 100%;
+        box-shadow: 0 0 0 4px #e00697 inset;
+    }
+
+    #ratnojit4:hover {
+        background-image: linear-gradient(
+            55deg,
+            transparent 10%,
+            #161616 10% 20%,
+            transparent 20% 30%,
+            #161616 30% 40%,
+            transparent 40% 50%,
+            #161616 50% 60%,
+            transparent 60% 70%,
+            #161616 70% 80%,
+            transparent 80% 90%,
+            #161616 90% 100%
+        );
+        background-size: 150% 150%;
+        animation: background 3s linear infinite;
+    }

@@ -1,6 +1,6 @@
 # 🎉 Welcome to Web Button Designs! 🎊
 
-An Open Source Website Where Developer's Can Get Pre-Designed Button's CSS Sheet .Just Can Copy the Design and Implment It
+An Open Source Website Where Developer's Can Get Pre-Designed Button's CSS Sheet .Just Can Copy the Design and Implement It
 
 [Project Repo](https://github.com/swarnade/webdesign-switch)
 <br />
@@ -18,7 +18,7 @@ This project is built using the following technologies:
 
 - **Bootstrap**: Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
 
-## Buttton Adding Procedure
+## Button Adding Procedure
 
 ### 1.Create a CSS File
 
@@ -26,10 +26,11 @@ This project is built using the following technologies:
 - CSS File Should Be Your Github Username
 
 ### 2.Paste The Code In HTML Document in Row Div
+
 ```
 <div class="col-12 col-md-3 main-row">
   <div class=" box-main">
-      <a href="{CSS File Link}">  
+      <a href="{CSS File Link}">
           <button id="{github-username}">Button </button>
       </a>
       <br />
@@ -45,11 +46,11 @@ This project is built using the following technologies:
   </div>
 </div>
 ```
+
 - Use Your Github Username As The Button Id And Css File Name
 - If You Have Contributed For Multiple Button Use userrname-1/userrname-2
 - Redirect To The CSS File Of The Button
 - Make Sure To Include Your Name/Github/Linkedin
-
 
 ## How to make a Pull Request?
 

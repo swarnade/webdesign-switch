@@ -2,6 +2,7 @@
 
 body {
   background-color: black;
+  padding-top: 200px;
 }
 .box-main {
   border: 3px solid white;

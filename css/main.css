@@ -45,10 +45,27 @@ body {
 }
 
 /* nav bar styling */
-nav.navbar {
-  background: linear-gradient(to right, #4234db, #3498db);
+/* nav.navbar {
+  background: linear-gradient(to right, #3425c0, #3498db);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+/* changed  */
+#button-div{
+  margin-top: 80px;
 }
+
+/* nav bar styling */
+nav.navbar {
+  
+  /* background: linear-gradient(to right, #4234db, #3498db);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+   
+  --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity))!important;
+
+}
+
 
 a.navbar-brand, 
 a.navbar-nav .nav-link {
@@ -71,8 +88,8 @@ a.navbar-nav .nav-link:hover {
 
 
 .navbar-nav .nav-link.active {
-  color: #391450;
-  
+  /* color: #391450; */
+  color: hsl(181, 88%, 47%);
 }
 .navbar-nav .nav-link.active:hover {
   color: #9ee049;

@@ -1,0 +1,58 @@
+.flat-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .flat-toggle input {
+    display: none;
+  }
+  
+  .flat-toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .flat-toggle-label:hover {
+    background-color: #ecf0f1; /* Background color on hover */
+  }
+  
+  .flat-toggle-input:checked + .flat-toggle-label {
+    background-color: #3498db; /* Background color when checked */
+    border-color: #3498db; /* Border color when checked */
+    color: #fff; /* Text color when checked */
+  }
+  
+  .flat-toggle-input + .flat-toggle-label .toggle-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .flat-toggle-input:checked + .flat-toggle-label .toggle-text {
+    color: #fff; /* Text color when checked */
+  }
+  
+  .flat-toggle-input:checked + .flat-toggle-label .toggle-indicator {
+    transform: translateX(100%);
+  }
+  
+  .flat-toggle-input:checked + .flat-toggle-label .state-indicator::after {
+    content: 'Enabled';
+    margin-left: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .flat-toggle-input + .flat-toggle-label .state-indicator::after {
+    content: 'Disabled';
+    margin-left: 5px;
+    font-weight: bold;
+    color: #3498db;
+  }
+  

@@ -1,0 +1,62 @@
+.custom-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .custom-toggle input {
+    display: none;
+  }
+  
+  .custom-toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #27ae60; /* Border color */
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .custom-toggle-label:hover {
+    background-color: #2ecc71; /* Background color on hover */
+  }
+  
+  .custom-toggle-input:checked + .custom-toggle-label {
+    background-color: #27ae60; /* Background color when checked */
+    border-color: #27ae60; /* Border color when checked */
+  }
+  
+  .custom-toggle-input + .custom-toggle-label .custom-toggle-text {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .custom-toggle-input:checked + .custom-toggle-label .custom-toggle-text {
+    color: #fff; /* Text color when checked */
+  }
+  
+  .custom-toggle-input + .custom-toggle-label .custom-toggle-slider {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    content: '';
+    transition: transform 0.3s;
+  }
+  
+  .custom-toggle-input:checked + .custom-toggle-label .custom-toggle-slider::before {
+    content: '\2713'; /* Checkmark symbol */
+    font-size: 20px;
+    color: #2ecc71; /* Bright green color */
+  }
+  
+  .custom-toggle-input + .custom-toggle-label .custom-toggle-slider::before {
+    content: '\2717'; /* X symbol */
+    font-size: 20px;
+    color: #c0392b; /* Dark red color */
+  }
+  

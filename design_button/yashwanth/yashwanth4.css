@@ -1,0 +1,62 @@
+.two-option {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    position: relative;
+    display: flex;
+    width: 95px; /* Reduced by 30% */
+    height: 52.5px; /* Reduced by 30% */
+    margin: auto; /* Reduced by 30% */
+    border: 3.5px solid #f7f7f5; /* Reduced by 30% */
+    border-radius: 11.9px; /* Reduced by 30% */
+    cursor: pointer;
+    background: white;
+  }
+
+  .two-option:after,
+  .two-option:before {
+    box-sizing: border-box;
+    position: absolute;
+    left: 3.5px; /* Reduced by 30% */
+    top: 3.5px; /* Reduced by 30% */
+    width: 38.5px; /* Reduced by 30% */
+    height: 38.5px; /* Reduced by 30% */
+    border: 3.5px solid;
+    border-radius: 50%; /* Changed to a circle */
+    text-align: center;
+    line-height: 29.4px; /* Reduced by 30% */
+    font-size: 22.4px; /* Reduced by 30% */
+    transition: all 0.3s ease-out;
+  }
+
+  .two-option:before {
+    content: "No"; /* Changed to "No" */
+    color: #d93816;
+    border-color: #ff6645;
+    background: #ffddcc;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .two-option:after {
+    left: auto;
+    right: 3.5px; /* Reduced by 30% */
+    content: "Yes"; /* Changed to "Yes" */
+    border-color: #34a84d;
+    color: #30ba4e;
+    background: #ccffbb;
+    opacity: 0.4;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .two-option:checked:after {
+    opacity: 1;
+  }
+
+  .two-option:checked:before {
+    opacity: 0.4;
+  }

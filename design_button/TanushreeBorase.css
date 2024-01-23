@@ -1,0 +1,65 @@
+
+.bookmarkBtn-1 {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  top: 0;
+  right: 50%; /* Position in the center horizontally */
+  transform: translateX(90%); /* Adjust to center the button */
+}
+
+.IconContainer-1
+{
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.icon-1{
+  border-radius: 5px;
+}
+
+.text-1{
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn-1:hover .IconContainer-1{
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn-1:hover .text-1 {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn-1:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}

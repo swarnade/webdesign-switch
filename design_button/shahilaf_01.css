@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 body {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;

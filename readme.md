@@ -53,6 +53,8 @@ This project is built using the following technologies:
 
 ## How to make a Pull Request?
 
+# Local installation Guide Video # - [Guide](https://drive.google.com/file/d/1ZePliQ80DbOlvZuxdRlcdkN_eYOgOrJO/view?usp=sharing)
+
 ### 1. Fork the Repository
 
 - Click on the "Fork" button in the top right corner of the repository page.

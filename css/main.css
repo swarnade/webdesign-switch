@@ -111,6 +111,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
 }
 
 #progress{
+  background-color: white;
   position: fixed;
   bottom: 20px;
   right: 10px;

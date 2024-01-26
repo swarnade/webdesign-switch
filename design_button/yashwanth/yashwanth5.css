@@ -1,0 +1,60 @@
+.switch-input {
+    display: none;
+  }
+  
+  .switch-container {
+    display: inline-block;
+    width: 60px; /*=w*/
+    height: 30px; /*=h*/
+    margin: 4px;
+    transform: translateY(50%);
+    position: relative;
+  }
+  
+  .switch-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  
+  .switch-slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    border-radius: 30px;
+    transform: translateX(-30px); /*translateX(-(w-h))*/
+    transition: 0.2s;
+  }
+  
+  .switch-input:checked + .switch-slider:before {
+    transform: translateX(30px); /*translateX(w-h)*/
+    background-color: limeGreen;
+  }
+  
+  .switch-input:checked + .switch-slider {
+    box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+  }
+  
+  .switch-200 .switch-slider:before {
+    width: 200%;
+    transform: translateX(-82px); /*translateX(-(w-h))*/
+  }
+  
+  .switch-200 .switch-input:checked + .switch-slider:before {
+    background-color: red;
+  }
+  
+  .switch-200 .switch-input:checked + .switch-slider {
+    box-shadow: 0 0 0 2px red, 0 0 8px red;
+  }
+  

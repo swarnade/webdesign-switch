@@ -1,0 +1,46 @@
+    #ratnojit10 {
+        background-color: #b81515;
+        padding: 7px;
+        width: 110px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        animation: bn53bounce 2s infinite;
+        cursor: pointer;
+        outline: solid white;
+        border: none;
+    }
+    
+    @keyframes bn53bounce {
+        5%,
+        50% {
+        transform: scale(1);
+        }
+    
+        10% {
+        transform: scale(1);
+        }
+    
+        15% {
+        transform: scale(1);
+        }
+    
+        20% {
+        transform: scale(1) rotate(-5deg);
+        }
+    
+        25% {
+        transform: scale(1) rotate(5deg);
+        }
+    
+        30% {
+        transform: scale(1) rotate(-3deg);
+        }
+    
+        35% {
+        transform: scale(1) rotate(2deg);
+        }
+    
+        40% {
+        transform: scale(1) rotate(0);
+        }
+    }

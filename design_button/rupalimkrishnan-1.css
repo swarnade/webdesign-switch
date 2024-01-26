@@ -1,0 +1,28 @@
+#rupalimkrishnan-1 {
+  height: 50px;
+  min-width: 140px;
+  background: linear-gradient(
+    94.5deg,
+    rgb(255, 235, 104) -1.2%,
+    rgb(61, 247, 255) 119.2%
+  );
+  cursor: pointer;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-color: #bae8e8;
+  text-align: center;
+  box-shadow: 5px 5px 5px aquamarine;
+  position: relative;
+  border-radius: 15px;
+  font-weight: bolder;
+  transition: all 0.15s ease;
+}
+#rupalimkrishnan-1:hover {
+  color: black;
+  background: linear-gradient(
+    68.6deg,
+    rgb(252, 165, 241) 1.8%,
+    rgb(181, 255, 255) 100.5%
+  );
+}

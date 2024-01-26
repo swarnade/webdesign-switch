@@ -1,6 +1,6 @@
 # 🎉 Welcome to Web Button Designs! 🎊
 
-An Open Source Website Where Developer's Can Get Pre-Designed Button's CSS Sheet .Just Can Copy the Design and Implment It
+An Open Source Website Where Developer's Can Get Pre-Designed Button's CSS Sheet .Just Can Copy the Design and Implement It
 
 [Project Repo](https://github.com/swarnade/webdesign-switch)
 <br />
@@ -18,7 +18,7 @@ This project is built using the following technologies:
 
 - **Bootstrap**: Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
 
-## Buttton Adding Procedure
+## Button Adding Procedure
 
 ### 1.Create a CSS File
 
@@ -52,6 +52,8 @@ This project is built using the following technologies:
 
 
 ## How to make a Pull Request?
+
+# Local installation Guide Video # - [Guide](https://drive.google.com/file/d/1ZePliQ80DbOlvZuxdRlcdkN_eYOgOrJO/view?usp=sharing)
 
 ### 1. Fork the Repository
 

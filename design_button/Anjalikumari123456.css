@@ -1,0 +1,45 @@
+#Anjalikumari123456 {
+    align-items: center;
+    margin-left: 60px;
+    background-image: linear-gradient(144deg, #ddfff7, #93E1D8 50%, #FFA69E);
+    border: 5px;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #1a1111;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    border: none; 
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+    animation: pulse 1.5s infinite alternate;
+}
+
+#Anjalikumari123456:hover {
+    color: rgb(158, 158, 28);
+    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+

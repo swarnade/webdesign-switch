@@ -3,6 +3,7 @@
 body {
   background-color: black;
 }
+
 .box-main {
   border: 3px solid white;
   text-align: center;
@@ -11,6 +12,7 @@ body {
   padding: 30px;
   border-radius: 5px;
   margin-top: 20px;
+  overflow: auto;
 }
 
 .img-github,
@@ -18,30 +20,34 @@ body {
   width: 30px;
   border-radius: 5px;
 }
+
 .designed-by {
   color: white;
   font-family: "Audiowide", Cantarell;
   padding: 15px 0px;
 }
+
 .main-row {
   margin: 20px 0px;
 }
+
 ::-webkit-scrollbar {
   width: 0px;
 }
+
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background-color: transparent;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background-color: transparent;
 }
 
 /* nav bar styling */
@@ -51,39 +57,39 @@ body {
 } */
 
 /* changed  */
-#button-div{
+#button-div {
   margin-top: 80px;
 }
 
 /* nav bar styling */
 nav.navbar {
-  
+
   /* background: linear-gradient(to right, #4234db, #3498db);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-   
+
   --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity))!important;
+  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
 
 }
 
 
-a.navbar-brand, 
+a.navbar-brand,
 a.navbar-nav .nav-link {
   color: #ced721 !important;
 }
 
-a.navbar-brand:hover, 
+a.navbar-brand:hover,
 a.navbar-nav .nav-link:hover {
   color: #dce9e6 !important;
 }
 
 .navbar-nav .nav-link {
   color: #fff;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #a6b03b; 
+  color: #a6b03b;
 }
 
 
@@ -91,22 +97,71 @@ a.navbar-nav .nav-link:hover {
   /* color: #391450; */
   color: hsl(181, 88%, 47%);
 }
+
 .navbar-nav .nav-link.active:hover {
   color: #9ee049;
-  
+
 }
 
 
 button.navbar-toggler {
-  background-color: transparent; 
-  border: none; 
-  padding: 0; 
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 button.navbar-toggler .navbar-toggler-icon {
-  border-radius: 4px; 
-}
-button.navbar-toggler:hover .navbar-toggler-icon {
-  background-color: #29797d; 
+  border-radius: 4px;
 }
 
+button.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #29797d;
+}
+
+
+/*media queries for responsiveness */
+@media (max-width: 1100px) {
+  .main-row .col-md-3 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  .box-main {
+    height: e00px;
+    padding: 20px;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-row .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .box-main {
+    height: 200px;
+    padding: 20px;
+    overflow: auto;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .main-row .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .box-main {
+    height: 250px;
+    padding: 20px;
+    overflow: auto;
+
+  }
+
+  .designed-by {
+    font-size: 14px;
+
+  }
+}

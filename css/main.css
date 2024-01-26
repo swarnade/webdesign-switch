@@ -165,14 +165,3 @@ button.navbar-toggler:hover .navbar-toggler-icon {
 
   }
 }
-
-.set{
-  position: relative;
-  top: 10rem;
-}
-@media screen and (max-width:770px) {
-  .set{
-    position: relative;
-    top: 10rem;
-  }
-}

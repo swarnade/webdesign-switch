@@ -43,3 +43,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
+@media (max-width: 768px){
+  .box-main{
+    height: 104%;
+  }
+}

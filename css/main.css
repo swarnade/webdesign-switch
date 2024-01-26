@@ -130,8 +130,32 @@ button.navbar-toggler:hover .navbar-toggler-icon {
     height: e00px;
     padding: 20px;
     overflow: auto;
-  }
+  scroll
+#progress{
+  background-color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.2);
+  cursor: pointer;
 }
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color:#29797d ;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #001a2e;
+
 
 @media (max-width: 750px) {
   .main-row .col-md-3 {
@@ -164,4 +188,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
     font-size: 14px;
 
   }
+
+}
+=======
 }

@@ -194,3 +194,11 @@ button.navbar-toggler:hover .navbar-toggler-icon {
 
 }
 
+}
+
+@media (max-width: 768px){
+  .box-main{
+    height: 104%;
+  }
+}
+

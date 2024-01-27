@@ -39,9 +39,10 @@
     background: none;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     #swarnade-3 {
-      font-size: 24px;
-      min-width: 196px;
+      position:relative;
+      left: 28%;
+      width: 30%;
     }
   }

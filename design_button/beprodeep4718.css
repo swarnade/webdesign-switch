@@ -1,0 +1,45 @@
+#beprodeep4718 {
+    background: #fffcd5;
+    box-shadow: 4px 4px #FFC436, 9px 9px #151515;
+    color: #151515;
+    border: solid 2px #151515;
+    text-decoration: none;
+    padding: 0.8vw 1.8vw;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4vw;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0s !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px;
+    font-family: freight-sans-pro, sans-serif;
+}
+
+#beprodeep4718::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #151515;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+#beprodeep4718:hover::before {
+    width: 100%;
+    right: 0;
+    left: unset;
+}
+
+#beprodeep4718:hover {
+    box-shadow: 0 0 #ffe00b, 0 0 #151515;
+    color: white;
+}

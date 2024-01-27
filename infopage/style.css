@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #1e1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 100px;
+  }
+  
+  section {
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    color: #f3703c;
+    margin-right: auto;
+  }
+  
+  p {
+    line-height: 2;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;}
+
+    .button-makers {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      
+  }
+  
+  .person {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 1rem;
+  }
+  
+  .person img {
+      width: 30px;
+      height: 30px;
+      margin-right: 1px;
+  }
+  
+  .person span {
+      margin-left: 1px;
+  }
+
+  .head h3{
+    text-align: center;
+    color: darkseagreen;
+    font-size: 1.89rem;
+    font-weight: 600;
+    
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Audiowide", Cantarell;
+  }
+  .left-nav a{
+    text-decoration: none;
+    color: rgb(158, 210, 107);
+    font-size: 1.34rem;
+  }
+  .right-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .right-nav ul li{
+    list-style: none;
+    margin: 0 10px;
+  }
+  .right-nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.20rem;
+    
+  }
+  #info{
+    color: #2b88ec;
+  }
+  #info:hover{
+    color: rgb(182, 238, 219);
+  }
+  .right-nav ul li a:hover{
+    color: rgb(182, 238, 219);
+  }
+  footer{
+    background-color: #161515;
+    border-top: 3px solid;
+    text-align: center;
+  }
+  .foot-head{
+    color: rgb(153, 187, 94);
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+  .connect a{
+    color: rgb(136, 182, 182);
+    font-size: 1.7rem;
+    letter-spacing: 10px;
+  }
+  .connect a:hover{
+    color: #2e6096;
+  }
+  .links a{
+    color: rgb(136, 182, 182);
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .links ul li{
+    list-style: none;
+  }

@@ -130,6 +130,8 @@ button.navbar-toggler:hover .navbar-toggler-icon {
     height: e00px;
     padding: 20px;
     overflow: auto;
+  }
+}
   scroll
 #progress{
   background-color: white;
@@ -155,6 +157,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
   font-size: 25px;
   font-weight: 700;
   color: #001a2e;
+}
 
 
 @media (max-width: 750px) {
@@ -190,5 +193,4 @@ button.navbar-toggler:hover .navbar-toggler-icon {
   }
 
 }
-=======
-}
+

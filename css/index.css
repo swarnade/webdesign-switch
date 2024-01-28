@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Mansalva&display=swap");
+
+
+body {
+    background-color: white;
+    background:url('../assets/Pattern.png') no-repeat fixed center;
+
+}
+
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.leftdiv {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+}
+
+
+.rightdiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+
+.main-img {
+    width: 50vw;
+    height: 100vh;
+}
+
+
+.heading-1{
+    font-size:3.5rem;
+    margin-bottom:0.7rem;
+    color:#1443BD;
+}
+.heading-2{
+    font-size:3.5rem;
+    margin-bottom:2rem;
+    margin-left:4rem;
+    color:#1443BD;
+}
+.heading-3{
+    font-size:1.8rem;
+    margin-bottom:2rem;
+    color:#2A84C6;
+}
+.design{
+    color:gold;
+}
+.button{
+    margin-left:10rem;
+    font-size:1.5rem;
+    background-color: transparent;
+    color:black;
+    height:70px;
+    border:solid 0.2rem aqua;
+    border-radius:70px;
+    padding:1rem;
+
+
+}
+.button:hover{
+    background-image: linear-gradient(
+        to right,
+        #25aae1,
+        #4481eb,
+        #04befe,
+        #3f86ed
+        );
+    color:white;
+    border:solid 0.1rem white;
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75)
+
+
+}
+
+
+/* nav bar styling */
+nav.navbar {
+
+
+    /* background: linear-gradient(to right, #4234db, #3498db);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+
+
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+
+
+}
+
+
+
+
+a.navbar-brand,
+a.navbar-nav .nav-link {
+    color: #ced721 !important;
+}
+
+
+a.navbar-brand:hover,
+a.navbar-nav .nav-link:hover {
+    color: #dce9e6 !important;
+}
+
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #a6b03b;
+}
+
+
+.navbar-nav .nav-link.active {
+    /* color: #391450; */
+    color: hsl(181, 88%, 47%);
+}
+
+
+.navbar-nav .nav-link.active:hover {
+    color: #9ee049;
+
+
+}
+
+
+button.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+button.navbar-toggler .navbar-toggler-icon {
+    border-radius: 4px;
+}
+
+
+button.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #29797d;
+}

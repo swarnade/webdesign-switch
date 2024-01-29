@@ -14,6 +14,30 @@ body {
   margin-top: 20px;
   overflow: auto;
 }
+.search{
+  width: 200px;
+  display: flex;
+}
+.input{
+  width: 152px;
+  height: 32px;
+}
+#mysearch{
+  display: inline;
+  width: 150px;
+  height: 30px;
+  color: black;
+  background-color: white;
+}
+
+.search button{
+  background-color: wheat;
+  color: black;
+}
+
+.card-title{
+  display: none !important;
+}
 
 .img-github,
 .img-linkedin {
@@ -194,7 +218,6 @@ button.navbar-toggler:hover .navbar-toggler-icon {
 
 }
 
-}
 
 @media (max-width: 768px){
   .box-main{

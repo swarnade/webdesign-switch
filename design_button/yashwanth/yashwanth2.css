@@ -1,0 +1,101 @@
+    /* Original toggle button styles */
+    .toggle-container {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+  
+      .toggle-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 34px;
+        transition: .4s;
+      }
+  
+      .toggle-slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        border-radius: 50%;
+        transition: .4s;
+      }
+  
+      input:checked + .toggle-slider {
+        background-color: #2196F3;
+      }
+  
+      input:checked + .toggle-slider:before {
+        transform: translateX(26px);
+      }
+  
+      input {
+        display: none;
+      }
+  
+      /* New toggle button styles */
+      .toggle-container-new {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin-top: 20px; /* Add some spacing */
+      }
+  
+      input.new-toggle {
+        display: none;
+      }
+      /* Another toggle button styles */
+      .toggle-container-another {
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        margin-top: 20px; /* Add some spacing */
+      }
+  
+      .toggle-slider-another {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffcc00; /* Yellow background */
+        border-radius: 20px;
+        border: 2px solid #e68a00; /* Darker border color */
+        transition: .4s;
+      }
+  
+      .toggle-slider-another:before {
+        position: absolute;
+        content: "";
+        height: 32px;
+        width: 32px;
+        top: 2px; /* Adjust top position */
+        left: 2px; /* Adjust left position */
+        background-color: #e68a00; /* Darker inner circle color */
+        border-radius: 50%;
+        transition: .4s;
+      }
+  
+      input:checked + .toggle-slider-another {
+        background-color: #895912; /* Checked background color */
+      }
+  
+      input:checked + .toggle-slider-another:before {
+        transform: translateX(40px);
+      }
+  
+      input.another-toggle {
+        display: none;
+      }

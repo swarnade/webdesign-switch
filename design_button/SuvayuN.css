@@ -1,0 +1,19 @@
+#SuvayuN{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    border: 2px solid blue;
+    box-shadow: 5px 5px 5px rgb(23, 0, 199);
+    background: linear-gradient(-45deg, #05337d 0%, #40c9ff 100% );
+    color: white;
+    transition-duration: 500ms;
+}
+
+#SuvayuN:hover{
+    transform: scale(1.1);
+    box-shadow: 7.5px 7.5px 7.5px rgb(23, 0, 199);
+
+}

@@ -1,0 +1,46 @@
+#ratnojit7 {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 2s infinite linear;
+    position: relative;
+    background-color: black;
+  }
+  
+  #ratnojit7:hover {
+    background-color: white;
+    color: #000000; 
+  }
+  
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.9em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.4em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
+  }

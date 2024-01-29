@@ -92,3 +92,11 @@ button.navbar-toggler .navbar-toggler-icon {
 button.navbar-toggler:hover .navbar-toggler-icon {
   background-color: #29797d; 
 }
+.img-github:hover{
+  transform: translateY(-4px);
+  transition:0.3s;
+}
+.img-linkedin:hover{
+  transform: translateY(-4px);
+  transition:0.3s;
+}

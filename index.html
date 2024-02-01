@@ -123,7 +123,7 @@
   </div>
   <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark" data-aos="fade-down">
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="navbar">
       <a class="navbar-brand" href="#">Web Button Designs</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -142,6 +142,14 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item" id="toggle">
+            <span id="mode" style="display: none;">system</span>
+            <label class="switch btn-color-mode-switch">
+              <input type="checkbox" name="color_mode" id="color_mode" value="1">
+              <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
+            </label>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
           </li>
           <li class="nav-item">
             <div class="search nav-link">
@@ -1261,8 +1269,8 @@
         <!-- Aftab -->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
-            <h1 class="card-title">Social Media Share</h1>
-            <button>
+            <h1 class="card-title">Social Media Share hover</h1>
+            <button class="aftab">
               <div class="letters">
                 <div class="card">
                   <div class="card_face front">S</div>
@@ -1439,6 +1447,8 @@
       </div>
     </div>
   </section>
+  </div>
+
   
   <footer class="footer">
     <div class="waves">
@@ -1474,8 +1484,7 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-
+   <script src="./app.js"></script>
   <script>
     function filterCards() {
       var input, filter, cards, card, title, i, txtValue;

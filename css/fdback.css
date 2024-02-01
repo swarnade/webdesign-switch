@@ -139,3 +139,12 @@ footer {
 	width: 30px; 
 	height: auto;
 }
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;  /* Adjust the margin as needed */
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px);
+}

@@ -172,3 +172,23 @@ body {
       padding: 20px;
     }
   }
+  @media (max-width:380px) {
+    .container{
+      margin: 0px;
+    }
+  }
+  @media (max-width:430px) {
+    .container{
+      margin: 0px;
+    }
+  }
+  @media (max-width:770px) {
+    .container{
+      margin: 0px;
+    }
+  }
+  @media (max-width:1036px) {
+    .container{
+      margin: 0px;
+    }
+  }

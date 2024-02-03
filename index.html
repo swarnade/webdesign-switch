@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +24,10 @@
   <link href="./design_button/swarnade-10.css" rel="stylesheet" />
   <link href="./design_button/swarnade-11.css" rel="stylesheet" />
   <link href="./design_button/kom-senapati-1.css" rel="stylesheet" />
+  <link href="./design_button/SuvayuN.css" rel="stylesheet" />
+
+  <!-- CSS files by beprodeep4718 -->
+  <link rel="stylesheet" href="./design_button/beprodeep4718.css">
 
   <!--CSS files by nandita27iitp-->
   <link href="./design_button/nandita27/nandita27-1.css" rel="stylesheet" />
@@ -79,7 +84,7 @@
   <link href="./design_button/zul132-2.css" rel="stylesheet">
   <link rel="stylesheet" href="./design_button/shahilaf_01.css">
 
- 
+
   <!-- 8 toggle buttons by Yashwanth -->
   <link rel="stylesheet" href="./design_button/yashwanth/yashwanth.css">
   <link rel="stylesheet" href="./design_button/yashwanth/yashwanth1.css">
@@ -91,19 +96,38 @@
   <link rel="stylesheet" href="./design_button/yashwanth/yashwanth7.css">
 
 
-    <link href="./design_button/kom-senapati-1.css" rel="stylesheet">
-    <link href="./design_button/zul132-1.css" rel="stylesheet">
-    <link href="./design_button/zul132-2.css" rel="stylesheet">
-    <link rel="stylesheet" href="./design_button/shahilaf_01.css">
-    <link rel="stylesheet" href="./design_button/TanushreeBorase.css">
+  <link href="./design_button/kom-senapati-1.css" rel="stylesheet">
+  <link href="./design_button/zul132-1.css" rel="stylesheet">
+  <link href="./design_button/zul132-2.css" rel="stylesheet">
+  <link rel="stylesheet" href="./design_button/shahilaf_01.css">
+  <link rel="stylesheet" href="./design_button/TanushreeBorase.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <!-- by aftab -->
+  <link rel="stylesheet" href="./design_button/AftabShare.css">
+
+  <!-------------RATNOJIT SAHA NEW 5 BUTTONS ------------->
+  <link rel="stylesheet" href="./design_button/RatnojitSaha-11.css">
+  <link rel="stylesheet" href="./design_button/RatnojitSaha-12.css">
+  <link rel="stylesheet" href="./design_button/RatnojitSaha-13.css">
+  <link rel="stylesheet" href="./design_button/RatnojitSaha-14.css">
+  <link rel="stylesheet" href="./design_button/RatnojitSaha-15.css">
+  <link rel="stylesheet" href="./footer_main.css">
+
+  <!-- CSS file by Sanglap-Halder -->
+  <link rel="stylesheet" href="./design_button/Sanglap-Halder.css">
 
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
-    <div class="container-fluid">
+
+  <div id="progress">
+    <span id="progress-value">&#x1F815; </span>
+  </div>
+  <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark" data-aos="fade-down">
+
+    <div class="container-fluid" id="navbar">
       <a class="navbar-brand" href="#">Web Button Designs</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,16 +147,35 @@
           <li class="nav-item">
             <a class="nav-link" href="feedback.html">Feedback</a>
           </li>
+          <li class="nav-item" id="toggle">
+            <span id="mode" style="display: none;">system</span>
+            <label class="switch btn-color-mode-switch">
+              <input type="checkbox" name="color_mode" id="color_mode" value="1">
+              <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
+            </label>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </li>
+          <li class="nav-item">
+            <div class="search nav-link">
+              <div class="input">
+                <input type="text" placeholder="search" id="mysearch" oninput="filterCards()">
+              </div>
+
+              <span class="clear" onclick="clearSearch()"><button>X</button></span>
+            </div>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
 
   <section id="button-div">
-    <div class="container-fluid">
+    <div class="container-fluid set">
       <div class="row main-row">
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">normal pink</h1>
             <a href="./design_button/swarnade.css">
               <button id="swarnade">Button</button>
             </a>
@@ -153,6 +196,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">glowing blue hover</h1>
             <a href="./design_button/swarnade-1.css">
               <button id="swarnade-1">Button</button>
             </a>
@@ -170,6 +214,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">flickering glitch red hover</h1>
             <a href="./design_button/swarnade-2.css">
               <button id="swarnade-2">Button</button>
             </a>
@@ -187,6 +232,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">shiny blue normal</h1>
             <a href="./design_button/swarnade-3.css">
               <button id="swarnade-3">Button</button>
             </a>
@@ -203,6 +249,7 @@
         </div>
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">normal hover white yellow</h1>
             <a href="./design_button/swarnade-4.css">
               <button id="swarnade-4">Button</button>
             </a>
@@ -220,6 +267,7 @@
         </div>
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">normal hover orange</h1>
             <a href="./design_button/swarnade-5.css">
               <button id="swarnade-5">Button</button>
             </a>
@@ -237,6 +285,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">animated transparent hover</h1>
             <a href="./design_button/swarnade-6.css">
               <button id="swarnade-6">Button</button>
             </a>
@@ -254,6 +303,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">glowing transparent</h1>
             <a href="./design_button/swarnade-7.css">
               <button id="swarnade-7">Button</button>
             </a>
@@ -271,6 +321,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">animated transparent hover</h1>
             <a href="./design_button/swarnade-8.css">
               <button id="swarnade-8">Button</button>
             </a>
@@ -288,6 +339,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title"> red white normal 3d</h1>
             <a href="./design_button/swarnade-9.css">
               <button id="swarnade-9">Button</button>
             </a>
@@ -305,6 +357,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">3d animated hover blue</h1>
             <a href="./design_button/swarnade-10.css">
               <button id="swarnade-10">Button</button>
             </a>
@@ -322,6 +375,7 @@
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">glowing green hover</h1>
             <a href="./design_button/swarnade-11.css">
               <button id="swarnade-11">Button</button>
             </a>
@@ -337,8 +391,29 @@
           </div>
         </div>
 
+        <!-- Button by beprodeep4718 -->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">animated white hover 3d</h1>
+            <a href="./design_button/beprodeep4718.css">
+              <button id="beprodeep4718">Button</button>
+            </a>
+            <br />
+            <p1 class="designed-by">Designed By Beprodeep Das</p1>
+            <div>
+              <a href="https://github.com/beprodeep4718">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/beprodeep-das-095043290/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">white black hover</h1>
             <a href="./design_button/kom-senapati-1.css">
               <button id="kom-senapati-1">Button</button>
             </a>
@@ -358,6 +433,7 @@
         <!--Button by nandita27iitp (One)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">animated yellow hover</h1>
             <a href="./design_button/nandita27/nandita27-1.css" id="nan">
               <button id="nan-1"><span></span>button</button>
             </a>
@@ -378,6 +454,7 @@
         <!--Button by nandita27iitp (Two)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">plant based white hover animated</h1>
             <a href="./design_button/nandita27/nandita27-2.css" id="nan">
               <button id="nan-2">
                 Plant based
@@ -485,6 +562,7 @@
         <!--Button by nandita27iitp (Three)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">shine hover white</h1>
             <a href="./design_button/nandita27/nandita27-3.css" id="nan">
               <button class="btn-shine" id="nan-3">
                 <span id="nandu">Shine</span>
@@ -506,6 +584,7 @@
         <!--Button by nandita27iitp (Four)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">hover crush black</h1>
             <a href="./design_button/nandita27/nandita27-4.css" id="nan">
               <button id="nan-4">
                 <p>Crush!</p>
@@ -527,6 +606,7 @@
         <!--Button by nandita27iitp (Five)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">animated black 3d hover</h1>
             <a href="./design_button/nandita27/nandita27-5.css" id="nan">
               <button id="nan-5">
                 <span></span>
@@ -554,6 +634,7 @@
         <!--Button by nandita27iitp (Six)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">shiny normal gradient universe</h1>
             <a href="./design_button/nandita27/nandita27-6.css" id="nan">
               <button class="uiverse" id="nan-6">
                 <div class="wrapper">
@@ -591,6 +672,7 @@
         <!--Button by nandita27iitp (Seven)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">animated fold red hover 3d</h1>
             <a href="./design_button/nandita27/nandita27-7.css" id="nan">
               <button id="nan-7">
                 <b>Fold me!</b>
@@ -613,6 +695,7 @@
         <!--Button by nandita27iitp (Eight)-->
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">flickering white hover</h1>
             <a href="./design_button/nandita27/nandita27-8.css" id="nan">
               <div class="wrapper-button">
                 <button id="nan-8">Button</button>
@@ -633,7 +716,8 @@
         <!--Button by nandita27iitp (Nine)-->
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">glowing black hover</h1>
             <a href="./design_button/RatnojitSaha-1.css">
               <button class="ratnojit1">Button</button>
             </a>
@@ -653,7 +737,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">glowing gradient hover</h1>
             <a href="./design_button/RatnojitSaha-2.css">
               <button id="ratnojit2">Button</button>
             </a>
@@ -673,7 +758,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">glowing black hover</h1>
             <a href="./design_button/RatnojitSaha-3.css">
               <button id="ratnojit3">Button</button>
             </a>
@@ -693,7 +779,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">hover animated pink</h1>
             <a href="./design_button/RatnojitSaha-4.css">
               <button id="ratnojit4">Button</button>
             </a>
@@ -714,7 +801,8 @@
 
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">glowing white blue hover</h1>
             <a href="./design_button/zul132-1.css">
               <button id="zul132-1">Button</button>
             </a>
@@ -732,7 +820,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">hover gradient</h1>
             <a href="./design_button/zul132-2.css">
               <button id="zul132-2"><span class="rainbow-button_title">Button</span></button>
             </a>
@@ -750,7 +839,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">nomal hover violet</h1>
             <a href="./design_button/RatnojitSaha-5.css">
               <button id="ratnojit5">Button</button>
             </a>
@@ -770,7 +860,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">glowing hover blue</h1>
             <a href="./design_button/RatnojitSaha-6.css">
               <button id="ratnojit6">Button</button>
             </a>
@@ -790,7 +881,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">animated black white hover</h1>
             <a href="./design_button/RatnojitSaha-7.css">
               <button id="ratnojit7">Button</button>
             </a>
@@ -810,7 +902,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">glowing hover orange</h1>
             <a href="./design_button/RatnojitSaha-8.css">
               <button id="ratnojit8">Button</button>
             </a>
@@ -830,7 +923,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">home normal white</h1>
             <a href="./design_button/RatnojitSaha-9.css">
               <button id="ratnojit9"><i class="fa-solid fa-house"></i> Button</button>
             </a>
@@ -850,7 +944,8 @@
         </div>
 
         <div class="col-12 col-md-3 main-row">
-          <div class=" box-main">
+          <div class="box-main">
+            <h1 class="card-title">red animated</h1>
             <a href="./design_button/RatnojitSaha-10.css">
               <button id="ratnojit10">Button</button>
             </a>
@@ -870,6 +965,7 @@
         </div>
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">glowing hover animated black</h1>
             <a href="./design_button/nandita27/nandita27-10.css" id="nan">
               <button id="nan-10">Button</button>
             </a>
@@ -886,17 +982,18 @@
             </div>
           </div>
         </div>
- 
+
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">save black hover</h1>
             <a href="./design_button/TanushreeBorase.css">
-                <button class="bookmarkBtn-1">
+              <button class="bookmarkBtn-1">
                 <span class="IconContainer-1">
                   <svg viewBox="0 0 384 512" height="0.9em" class="icon"></svg>
-                    <path
-                      d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
-                    ></path>
-                  </span>
+                  <path
+                    d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z">
+                  </path>
+                </span>
                 <p class="text-1">Save</p>
               </button>
             </a>
@@ -912,11 +1009,12 @@
             </div>
           </div>
         </div>
-        
 
-        
+
+
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">hover transparent</h1>
             <button class="btn btn-primary btn-ghost btn-multiple-border-stroke">
               <div class="btn-borders-group">
                 <div class="border-top"></div>
@@ -953,29 +1051,50 @@
         </div>
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
-              <!-- Use a label directly for the toggle button -->
-              <label for="yashwanth-toggle">
-                  <!-- Update button ID and text -->
-                  <label class="toggle-container">
-                    <input type="checkbox">
-                    <span class="toggle-slider"></span>
-                  </label>
+            <h1 class="card-title">glowing hover blue</h1>
+            <a href="./design_button/SuvayuN.css">
+              <button id="SuvayuN">Button </button>
+            </a>
+            <br />
+            <p1 class="designed-by">Designed by Suvayu Nandy</p1>
+            <div>
+              <a href="https://github.com/SuvayuN">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/suvayu-nandy/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 main-row">
+
+          <div class="box-main">
+            <h1 class="card-title">toggle white click</h1>
+            <!-- Use a label directly for the toggle button -->
+            <label for="yashwanth-toggle">
+              <!-- Update button ID and text -->
+              <label class="toggle-container">
+                <input type="checkbox">
+                <span class="toggle-slider"></span>
               </label>
-      
-              <br />
-              <div class="designed-by">
-                  <p1>Designed By Yashwanth</p1>
-              </div>
-              <div>
-                  <a href="https://github.com/your-github-username/" target="_blank"><img src="./assets/github.png"
-                          class="img-github" /></a>
-                  <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank"><img
-                          src="./assets/linkedin.png" class="img-linkedin" /></a>
-              </div>
+            </label>
+
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/your-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">toggle click black</h1>
             <!-- New toggle button -->
             <label for="new-toggle">
               <label class="toggle-container-new">
@@ -983,61 +1102,70 @@
                 <span class="toggle-slider-new"></span>
               </label>
             </label>
-            
+
             <br />
             <div class="designed-by">
               <p1>Designed By Yashwanth</p1>
             </div>
             <div>
-              <a href="https://github.com/another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-              <a href="https://www.linkedin.com/in/another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
+              <a href="https://github.com/another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
             </div>
           </div>
         </div>
-        
-      <div class="col-12 col-md-3 main-row">
-        <div class="box-main">
-          <!-- Another toggle button -->
-          <label for="another-toggle">
-            <label class="toggle-container-another">
-              <input type="checkbox" class="another-toggle">
-              <span class="toggle-slider-another"></span>
+
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">toggle click yellow</h1>
+            <!-- Another toggle button -->
+            <label for="another-toggle">
+              <label class="toggle-container-another">
+                <input type="checkbox" class="another-toggle">
+                <span class="toggle-slider-another"></span>
+              </label>
             </label>
-          </label>
-          
-          <br />
-          <div class="designed-by">
-            <p1>Designed By Yashwanth</p1>
-          </div>
-          <div>
-            <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-            <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
+
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-12 col-md-3 main-row">
-        <div class="box-main">
+
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">light dark toggle click</h1>
             <label class="switch btn-color-mode-switch">
               <input type="checkbox" name="color_mode" id="color_mode" value="1">
               <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
             </label>
             <i class="fa fa-moon-o" aria-hidden="true"></i>
-    
-          <br />
-          <div class="designed-by">
-            <p1>Designed By Yashwanth</p1>
-          </div>
-          <div>
-            <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-            <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
+
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
           </div>
         </div>
-      </div>
 
 
         <div class="col-12 col-md-3 main-row">
           <div class="box-main">
+            <h1 class="card-title">hover green shape</h1>
             <a href="./design_button/pranjal.css">
               <button id="pranjal">Button</button>
             </a>
@@ -1052,98 +1180,367 @@
             </div>
           </div>
         </div>
-      <div class="col-12 col-md-3 main-row">
-        <div class="box-main">
-          <input type="checkbox" class="two-option">
-    
-          <br />
-          <div class="designed-by">
-            <p1>Designed By Yashwanth</p1>
-          </div>
-          <div>
-            <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-            <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
-          </div>
-        </div>
-      </div>
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">toggle yes no click white</h1>
+            <input type="checkbox" class="two-option">
 
-      <div class="col-12 col-md-3 main-row">
-        <div class="box-main">
-          <div>
-            <label class="switch-container switch-200">
-              <input type="checkbox" class="switch-input">
-              <span class="switch-slider"></span>
-          </div>
-          
-          <br />
-          <div class="designed-by">
-            <p1>Designed By Yashwanth</p1>
-          </div>
-          <div>
-            <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-            <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-3 main-row">
-        <div class="box-main">
-          <div class="flat-toggle">
-            <input type="checkbox" id="toggle1" class="flat-toggle-input">
-            <label for="toggle1" class="flat-toggle-label">
-              <span class="toggle-text">Status</span>
-              <span class="toggle-indicator"></span>
-              <span class="state-indicator"></span>
-            </label>
-          </div>          
-          
-          <br />
-          <div class="designed-by">
-            <p1>Designed By Yashwanth</p1>
-          </div>
-          <div>
-            <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-            <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
           </div>
         </div>
 
-      </div>
-    </div>
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">toggle slide black click</h1>
+            <div>
+              <label class="switch-container switch-200">
+                <input type="checkbox" class="switch-input">
+                <span class="switch-slider"></span>
+            </div>
 
-
-    <!--Button by nandita27iitp (Ten)-->
-
-
-      <div class="col-12 col-md-3 main-row">
-        <div class="box-main">
-          <div class="custom-toggle">
-            <input type="checkbox" id="toggle4" class="custom-toggle-input">
-            <label for="toggle4" class="custom-toggle-label">
-              <span class="custom-toggle-text">Toggle</span>
-              <span class="custom-toggle-slider"></span>
-            </label>
-          </div>
-                    
-          <br />
-          <div class="designed-by">
-            <p1>Designed By Yashwanth</p1>
-          </div>
-          <div>
-            <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png" class="img-github" /></a>
-            <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img src="./assets/linkedin.png" class="img-linkedin" /></a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">toggle hover click status blue</h1>
+            <div class="flat-toggle">
+              <input type="checkbox" id="toggle1" class="flat-toggle-input">
+              <label for="toggle1" class="flat-toggle-label">
+                <span class="toggle-text">Status</span>
+                <span class="toggle-indicator"></span>
+                <span class="state-indicator"></span>
+              </label>
+            </div>
+
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
+          </div>
+
         </div>
+
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">toggle green click</h1>
+            <div class="custom-toggle">
+              <input type="checkbox" id="toggle4" class="custom-toggle-input">
+              <label for="toggle4" class="custom-toggle-label">
+                <span class="custom-toggle-text">Toggle</span>
+                <span class="custom-toggle-slider"></span>
+              </label>
+            </div>
+
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Yashwanth</p1>
+            </div>
+            <div>
+              <a href="https://github.com/yet-another-github-username/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/yet-another-linkedin-username/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aftab -->
+        <div class="col-12 col-md-3 main-row">
+          <div class="box-main">
+            <h1 class="card-title">Social Media Share hover</h1>
+            <button class="aftab">
+              <div class="letters">
+                <div class="card">
+                  <div class="card_face front">S</div>
+                  <div class="card_face back"><i class="fab fa-github-square"></i></div>
+                </div>
+              </div>
+
+              <div class="letters">
+                <div class="card">
+                  <div class="card_face front">H</div>
+                  <div class="card_face back">
+                    <i class="fab fa-twitter-square"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="letters">
+                <div class="card">
+                  <div class="card_face front">A</div>
+                  <div class="card_face back">
+                    <i class="fab fa-facebook-square"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="letters">
+                <div class="card">
+                  <div class="card_face front">R</div>
+                  <div class="card_face back">
+                    <i class="fab fa-instagram-square"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="letters">
+                <div class="card">
+                  <div class="card_face front">E</div>
+                  <div class="card_face back">
+                    <i class="fab fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Aftab</p1>
+            </div>
+            <div>
+              <a href="https://github.com/AftabMankapure/" target="_blank"><img src="./assets/github.png"
+                  class="img-github" /></a>
+              <a href="https://www.linkedin.com/in/aftab-mankapure-7731001b8/" target="_blank"><img
+                  src="./assets/linkedin.png" class="img-linkedin" /></a>
+            </div>
+          </div>
+        </div>
+
+         <!----------------- ********************* Ratnojit Saha New 5 buttons ****************** ------------------------->
+
+        <div class="col-12 col-md-3 main-row">
+          <div class=" box-main" data-aos="zoom-in">
+            <a href="./design_button/RatnojitSaha-11.css">
+              <button class="button-1" role="button">Button</button>  
+            </a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Ratnojit Saha</p1>
+            </div>
+            <div>
+              <a href="https://github.com/ratnojitsaha">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/ratnojit-saha-854057268/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-3 main-row">
+          <div class=" box-main" data-aos="zoom-in">
+            <a href="./design_button/RatnojitSaha-11.css">
+              <button class="button-2">Button</button>  
+            </a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Ratnojit Saha</p1>
+            </div>
+            <div>
+              <a href="https://github.com/ratnojitsaha">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/ratnojit-saha-854057268/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 main-row">
+          <div class=" box-main" data-aos="zoom-in">
+            <a href="./design_button/RatnojitSaha-13.css">
+              <button class="button-3">Button</button>  
+            </a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Ratnojit Saha</p1>
+            </div>
+            <div>
+              <a href="https://github.com/ratnojitsaha">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/ratnojit-saha-854057268/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-3 main-row">
+          <div class=" box-main" data-aos="zoom-in">
+            <a href="./design_button/RatnojitSaha-14.css">
+              <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fab fa-twitter"></i></span>
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+            </ul>
+            </a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Ratnojit Saha</p1>
+            </div>
+            <div>
+              <a href="https://github.com/ratnojitsaha">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/ratnojit-saha-854057268/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 main-row">
+          <div class=" box-main" data-aos="zoom-in">
+            <a href="./design_button/RatnojitSaha-15.css">
+              <button class="button-5 type1">Button</button>  
+            </a>
+            <br />
+            <div class="designed-by">
+              <p1>Designed By Ratnojit Saha</p1>
+            </div>
+            <div>
+              <a href="https://github.com/ratnojitsaha">
+                <img src="./assets/github.png" class="img-github">
+              </a>
+              <a href="https://www.linkedin.com/in/ratnojit-saha-854057268/">
+                <img src="./assets/linkedin.png" class="img-linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button by Sanglap-Halder -->
+        <div class="col-12 col-md-3 main-row">
+          <div class=" box-main">
+              <a href="./design_button/Sanglap-Halder.css" style="text-decoration: none;">  
+                  <button id="Sanglap-Halder"> Button </button>
+              </a>
+              <br />
+              <p1 class="designed-by"> Designed by Sanglap Halder</p1>
+              <div>
+                  <a href="https://github.com/Sanglap-Halder">
+                      <img src="./assets/github.png" class="img-github">
+                  </a>
+                  <a href="https://www.linkedin.com/in/sanglap-halder/">
+                      <img src="./assets/linkedin.png" class="img-linkedin">
+                  </a>
+              </div>
+          </div>
+        </div>
+
+
       </div>
-
-
-      <!--Button by nandita27iitp (Ten)-->
-
-       </div>
     </div>
   </section>
+  </div>
+
+  
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Designs</a></li>
+      <li class="menu__item"><a class="menu__link" href="./infopage/index.html">Info</a></li>
+      <li class="menu__item"><a class="menu__link" href="./feedback.html">Feedback</a></li>
+
+    </ul>
+    <p>&copy;2024 Swarnadeep SP | All Rights Reserved</p>
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="./app.js"></script>
+  <script>
+    function filterCards() {
+      var input, filter, cards, card, title, i, txtValue;
+      input = document.getElementById('mysearch');
+      filter = input.value.toUpperCase();
+      cards = document.getElementsByClassName('col-12 col-md-3 main-row');
+
+      for (i = 0; i < cards.length; i++) {
+        card = cards[i];
+        title = card.querySelector('.card-title');
+        txtValue = title.textContent || title.innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      }
+    }
+    function clearSearch() {
+      document.getElementById('mysearch').value = '';
+      filterCards(); // Clearing the search should show all cards
+    }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
   <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="Scroll.js"></script>
+  
 </body>
 
 </html>

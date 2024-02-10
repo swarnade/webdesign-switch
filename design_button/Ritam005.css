@@ -1,0 +1,25 @@
+#Ritam005{
+    width: 10vw;
+    height: 7.5vh;
+    background-color: rgb(206, 135, 135);
+    color: rgb(123, 12, 12);
+    border: 2.7px solid rgb(255, 56, 56);
+    border-radius: 5vw;
+    box-shadow: 0vw 0vw 1.6vw rgb(74, 73, 73) ;
+    text-shadow: .2vw .6vw 0.5vw rgb(245, 72, 72);
+    font-size: 4vh;
+    font-family: 'Single Day', cursive;
+    font-weight: 1000;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 0.3vw;
+    position: relative;
+    bottom: 8%;
+}
+#Ritam005:hover{
+    background-color: rgb(241, 36, 36);
+    color: rgb(215, 156, 156);
+    border: 2.7px solid rgb(206, 135, 135);
+    text-shadow: .2vw .6vw 0.5vw rgb(123, 12, 12);
+    box-shadow: 0.5vw 0.58vw 0.5vw rgb(74, 73, 73) ;
+}

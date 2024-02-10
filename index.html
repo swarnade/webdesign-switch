@@ -150,14 +150,21 @@
           <li class="nav-item">
             <a class="nav-link" href="feedback.html">Feedback</a>
           </li>
-          <li class="nav-item" id="toggle">
-            <span id="mode" style="display: none;">system</span>
-            <label class="switch btn-color-mode-switch">
-              <input type="checkbox" name="color_mode" id="color_mode" value="1">
-              <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
-            </label>
-            <i class="fa fa-moon-o" aria-hidden="true"></i>
-          </li>
+
+          <img src="/assets/sun.png" alt="sun.png" id="modeChanger">
+          <script>
+            var modeChanger = document.getElementById("modeChanger");
+            modeChanger.onclick = function(){
+              document.body.classList.toggle("light-theme");
+              if (document.body.classList.contains("light-theme")) {
+                modeChanger.src = "/assets/moon.png";
+              }
+              else{
+                modeChanger.src = "/assets/sun.png";
+              }
+            }
+          </script>
+          
           <li class="nav-item">
             <div class="search nav-link">
               <div class="input">

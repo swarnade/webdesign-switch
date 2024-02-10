@@ -55,9 +55,9 @@ justify-content: center;
 align-items: center;
 }
 #toggle{
-margin-top: -20px;
-margin-left: 10px;
-height: 1rem;
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 3rem;
 }
 
 .card-title{

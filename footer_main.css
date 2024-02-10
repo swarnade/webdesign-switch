@@ -15,6 +15,7 @@ section{
   align-items: center;
   flex-direction: column;
   bottom: 0px;
+        z-index: 10;
  margin-top: 10vh;
 }
 

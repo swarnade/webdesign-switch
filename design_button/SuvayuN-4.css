@@ -1,0 +1,14 @@
+#SuvayuN-4{
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    transition: 1s;
+    background-color: aquamarine;
+}
+
+#SuvayuN-4:hover{
+    transform: rotate(360deg) scale(1.5);
+    background-color: black;
+    color: aquamarine;
+}

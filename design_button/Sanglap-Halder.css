@@ -6,8 +6,8 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 0vw 0vw 0.5vw white;
     border-radius: 3vw;
-    position: relative;
-    align-items: center;
+    /* position: relative;
+    align-items: center; */
     width: 10vw;
     left: 4.5vw;
 }

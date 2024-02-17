@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Mansalva&display=swap");
 
-body {
-  background-color: black;
+:root[data-applied-mode="light"] {
+  color-scheme: light;
+  --border: black;
+  --background: white;
+  --main-bg:rgb(255, 255, 255);
+}
+:root[data-applied-mode="dark"] {
+  color-scheme: dark;
+  --border: white;
+  --background: black;
+  --main-bg:rgb(24, 22, 33);
+}
+
+#button-div{
+  background-color: var(--main-bg);
+}
+.box-main{
+  background-color:rgb(24, 22, 33) ;
 }
 
 .box-main {
-  border: 3px solid white;
+  border: 3px solid var(--border);
   text-align: center;
   height: 200px;
   justify-content: center;
@@ -33,6 +49,15 @@ body {
 .search button{
   background-color: wheat;
   color: black;
+}
+ul{
+justify-content: center;
+align-items: center;
+}
+#toggle{
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 3rem;
 }
 
 .card-title{
@@ -151,7 +176,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
   }
 
   .box-main {
-    height: e00px;
+    height: 300px;
     padding: 20px;
     overflow: auto;
   }
@@ -198,6 +223,16 @@ button.navbar-toggler:hover .navbar-toggler-icon {
   }
 }
 
+.img-github:hover{
+  transform: translateY(-4px);
+  transition:0.3s;
+}
+.img-linkedin:hover{
+  transform: translateY(-4px);
+  transition:0.3s;
+}
+
+
 @media (max-width: 600px) {
   .main-row .col-md-3 {
     flex: 0 0 100%;
@@ -224,4 +259,5 @@ button.navbar-toggler:hover .navbar-toggler-icon {
     height: 104%;
   }
 }
+
 

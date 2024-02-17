@@ -1,0 +1,141 @@
+.heart-container {
+  --heart-color: rgb(255, 91, 137);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heart-container .svg-outline,
+        .heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  -webkit-animation: keyframes-svg-filled 1s;
+          animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  -webkit-animation: keyframes-svg-celebrate .5s;
+          animation: keyframes-svg-celebrate .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@-webkit-keyframes keyframes-svg-filled {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: brightness(1.5);
+            filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: brightness(1.5);
+            filter: brightness(1.5);
+  }
+}
+
+@-webkit-keyframes keyframes-svg-celebrate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-filter: brightness(1.5);
+            filter: brightness(1.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-filter: brightness(1.5);
+            filter: brightness(1.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}

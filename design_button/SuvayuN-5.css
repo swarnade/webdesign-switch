@@ -1,0 +1,36 @@
+#SuvayuN-5{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem 1rem 1rem 1rem;
+    top: -1rem;
+    left: 2rem;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+    animation: rot 0.5s infinite alternate;
+    transform-origin: top left;
+    background: linear-gradient(-45deg,orange,green);
+    font-weight: 700;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(29deg);
+    }
+    25%{
+        transform: rotate(37deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(53deg);
+    }
+    100%{
+        transform: rotate(61deg);
+    }
+}
+
+#SuvayuN-5:hover{
+    animation-play-state: paused;
+}

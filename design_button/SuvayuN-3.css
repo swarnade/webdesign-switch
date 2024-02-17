@@ -1,0 +1,16 @@
+#SuvayuN-3{
+    transition: 500ms ease-in-out;
+    background: -webkit-radial-gradient(circle,white,black);
+    border: 2px solid black;
+    font-weight: 700;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-bottom: 0rem;
+}
+
+#SuvayuN-3:hover{
+    height: 5rem;
+    width: 10rem;
+    border-radius: 1rem;
+}

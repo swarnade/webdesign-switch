@@ -16,15 +16,14 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load" , function () {
     loader.style.display = "none";
 
-    Array.from(boxes).forEach((e)=> {
-        e.classList.remove("hide");
-    })
-
-    footer.classList.remove("hide");
-    nav.classList.remove("hide");
-    // setTimeout(() => {
-        
-    // }, 8000);
+    setTimeout(() => {
+        Array.from(boxes).forEach((e)=> {
+            e.classList.remove("hide");
+        })
+    
+        footer.classList.remove("hide");
+        nav.classList.remove("hide");
+    }, 8000);
 
 
 })

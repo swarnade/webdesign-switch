@@ -23,7 +23,7 @@ window.addEventListener("load" , function () {
     
         footer.classList.remove("hide");
         nav.classList.remove("hide");
-    }, 5000);
+    }, 8000);
 
 
 })

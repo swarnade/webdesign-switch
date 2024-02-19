@@ -1,23 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Mansalva&display=swap");
 
-:root[data-applied-mode="light"] {
-  color-scheme: light;
-  --border: black;
-  --background: white;
-  --main-bg:rgb(255, 255, 255);
-}
-:root[data-applied-mode="dark"] {
-  color-scheme: dark;
+:root {
   --border: white;
   --background: black;
-  --main-bg:rgb(24, 22, 33);
+  --color: whitesmoke;
+  --divbg: rgb(27, 22, 22);
+}
+
+.light-theme {
+  --border: black;
+  --background: white;
+  --color: black;
+  --divbg: #eae9e9;
+}
+
+#modeChanger{
+  width: 2vw;
 }
 
 #button-div{
-  background-color: var(--main-bg);
+  background-color: var(--background);
 }
 .box-main{
-  background-color:rgb(24, 22, 33) ;
+  background-color: var(--divbg);
 }
 
 .box-main {
@@ -42,13 +47,13 @@
   display: inline;
   width: 150px;
   height: 30px;
-  color: black;
-  background-color: white;
+  color: var(--color);
+  background-color: var(--background);
 }
 
 .search button{
-  background-color: wheat;
-  color: black;
+  background-color: var(--background);
+  color: var(--color);
 }
 ul{
 justify-content: center;
@@ -71,7 +76,7 @@ align-items: center;
 }
 
 .designed-by {
-  color: white;
+  color: var(--color);
   font-family: "Audiowide", Cantarell;
   padding: 15px 0px;
 }
@@ -133,7 +138,7 @@ a.navbar-nav .nav-link:hover {
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: whitesmoke;
   transition: color 0.3s ease;
 }
 
@@ -183,7 +188,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
 }
   scroll
 #progress{
-  background-color: white;
+  background-color: var(--background);
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -205,7 +210,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
   place-items: center;
   font-size: 25px;
   font-weight: 700;
-  color: #001a2e;
+  color: var(--color);
 }
 
 

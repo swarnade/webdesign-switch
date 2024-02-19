@@ -264,5 +264,24 @@ button.navbar-toggler:hover .navbar-toggler-icon {
     height: 104%;
   }
 }
+::-webkit-scrollbar{
+  width: 1rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-track{
+  background:  white;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+  background: #d0e305;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:#a6b03b  ;
+}
+.box-main{
+  overflow-y: hidden;
+}
 
 

@@ -35,25 +35,36 @@
   margin-top: 20px;
   overflow: auto;
 }
-.search{
+.search {
   width: 200px;
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.input{
+.input {
   width: 152px;
   height: 32px;
 }
-#mysearch{
+#mysearch {
   display: inline;
   width: 150px;
-  height: 30px;
+  height: 32px;
   color: var(--color);
-  background-color: var(--background);
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-
-.search button{
-  background-color: var(--background);
-  color: var(--color);
+.clear__btn {
+  width: 40px !important;
+  height: 34px;
+  padding: 10px 12px !important;
+  background-color: peachpuff;
 }
 ul{
 justify-content: center;

@@ -153,7 +153,21 @@
       <a class="navbar-brand" href="#">Web Button Designs</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <img class="menu-icon" style="width: 30px; height: 30px;" id="menuIcon" src="/assets/menu.svg">
+        <script>
+          var menuIcon = document.getElementById("menuIcon");
+      
+          menuIcon.onclick = function() {
+              menuIcon.classList.toggle("menu-open");
+      
+              if (menuIcon.classList.contains("menu-open")) {
+                  menuIcon.src = "/assets/cross.jpg";
+              } else {
+                  menuIcon.src = "/assets/menu.svg";
+              }
+          }
+      </script>
+      
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">

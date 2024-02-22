@@ -5,7 +5,7 @@ section{
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background: #212529;
   min-height: 10px;

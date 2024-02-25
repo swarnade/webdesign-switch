@@ -1,0 +1,30 @@
+.rainbow{
+    background-color: #000000;
+    border-radius: 4px;  
+    color: violet;
+    cursor: pointer;
+    padding: 16px 30px;   
+}
+
+.rainbow-4{
+    color: skyblue;
+}
+
+.rainbow-4:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}

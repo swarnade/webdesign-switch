@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#preloader {
+    background: #000 url(./Screen\ fingerprint.gif) no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 30rem;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 25%;
+    left: 3%;
+    animation-name: animate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

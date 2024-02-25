@@ -1,23 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Mansalva&display=swap");
 
-:root[data-applied-mode="light"] {
-  color-scheme: light;
-  --border: black;
-  --background: white;
-  --main-bg:rgb(255, 255, 255);
-}
-:root[data-applied-mode="dark"] {
-  color-scheme: dark;
+:root {
   --border: white;
   --background: black;
-  --main-bg:rgb(24, 22, 33);
+  --color: whitesmoke;
+  --divbg: rgb(27, 22, 22);
+}
+
+.light-theme {
+  --border: black;
+  --background: white;
+  --color: black;
+  --divbg: #eae9e9;
+}
+
+#modeChanger{
+  width: 2vw;
 }
 
 #button-div{
-  background-color: var(--main-bg);
+  background-color: var(--background);
 }
 .box-main{
-  background-color:rgb(24, 22, 33) ;
+  background-color: var(--divbg);
 }
 
 .box-main {
@@ -30,25 +35,36 @@
   margin-top: 20px;
   overflow: auto;
 }
-.search{
+.search {
   width: 200px;
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.input{
+.input {
   width: 152px;
   height: 32px;
 }
-#mysearch{
+#mysearch {
   display: inline;
   width: 150px;
-  height: 30px;
-  color: black;
+  height: 32px;
+  color: var(--color);
   background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-
-.search button{
-  background-color: wheat;
-  color: black;
+.clear__btn {
+  width: 40px !important;
+  height: 34px;
+  padding: 10px 12px !important;
+  background-color: peachpuff;
 }
 ul{
 justify-content: center;
@@ -71,7 +87,7 @@ align-items: center;
 }
 
 .designed-by {
-  color: white;
+  color: var(--color);
   font-family: "Audiowide", Cantarell;
   padding: 15px 0px;
 }
@@ -133,7 +149,7 @@ a.navbar-nav .nav-link:hover {
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: whitesmoke;
   transition: color 0.3s ease;
 }
 
@@ -183,7 +199,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
 }
   scroll
 #progress{
-  background-color: white;
+  background-color: var(--background);
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -205,7 +221,7 @@ button.navbar-toggler:hover .navbar-toggler-icon {
   place-items: center;
   font-size: 25px;
   font-weight: 700;
-  color: #001a2e;
+  color: var(--color);
 }
 
 
@@ -259,5 +275,40 @@ button.navbar-toggler:hover .navbar-toggler-icon {
     height: 104%;
   }
 }
+::-webkit-scrollbar{
+  width: 1rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-track{
+  background:  white;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+  background: #d0e305;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:#a6b03b  ;
+}
+.box-main{
+  overflow-y: hidden;
+}
 
 
+#preloader {
+  background: #000 url(../Screen\ fingerprint.gif) no-repeat;
+  background-position-x: 50%;
+  background-position-y: 30%;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

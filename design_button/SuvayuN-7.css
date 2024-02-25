@@ -1,0 +1,14 @@
+#SuvayuN-7{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    background: transparent;
+    border: transparent;
+    transition: 0.5s;
+}
+
+#SuvayuN-7:hover{
+    background-color: cornflowerblue;
+    box-shadow: 0.25rem 0.25rem 0.25rem cornflowerblue;
+}

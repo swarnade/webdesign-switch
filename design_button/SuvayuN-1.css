@@ -1,0 +1,28 @@
+#SuvayuN-1{
+    height: 3rem;
+    width: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+    color: white;
+    -webkit-animation-name: ClrCng;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 2s; 
+    transition-duration: 500ms;
+}
+
+@-webkit-keyframes ClrCng {  
+    0% { background-color: rgb(0, 0, 255); }
+    12% { background-color: rgb(63, 0, 191); }
+    25% { background-color: rgb(127, 0, 127); }
+    37% { background-color: rgb(191, 0, 63); }
+    50% { background-color: rgb(255, 0, 0); }
+    62% { background-color: rgb(191, 0, 63); }
+    75% { background-color: rgb(127, 0, 127); }
+    87% { background-color: rgb(63, 0, 191); }
+    100% { background-color: rgb(0, 0, 255); }
+  }
+
+#SuvayuN-1:hover{
+    transform: scale(1.1);
+    box-shadow: 2.5px 2.5px 2.5px white;
+}

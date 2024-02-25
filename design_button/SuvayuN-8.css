@@ -1,0 +1,14 @@
+#SuvayuN-8{
+    position: relative;
+    height: 3rem;
+    width: 8rem;
+    background-color: black;
+    color: red;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    transition: 1s;
+}
+#SuvayuN-8:hover{
+    transform: scale(1.1);
+    box-shadow: 1.5px 1.5px 1.5px grey;
+}

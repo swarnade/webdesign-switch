@@ -1,0 +1,37 @@
+#zul132-8 {
+    padding: 20px 40px;
+    font-size: 16px;
+    background-color: #e833cd; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  #zul132-8::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #zul132-8:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  #zul132-8 span {
+    position: relative;
+    z-index: 1;
+  }
+  

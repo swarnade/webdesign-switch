@@ -1,0 +1,44 @@
+#zul132-9 {
+    padding: 20px 40px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#zul132-9::before,
+#zul132-9::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #1e72ab; 
+    transition: all 0.3s ease;
+}
+
+#zul132-9::before {
+    left: -100%;
+}
+
+#zul132-9::after {
+    right: -100%;
+}
+
+#zul132-9:hover::before {
+    left: 0;
+}
+
+#zul132-9:hover::after {
+    right: 0;
+}
+
+#zul132-9 span {
+    position: relative;
+    z-index: 1; /* Ensure the text appears above pseudo-elements */
+}
